@@ -114,42 +114,6 @@ namespace Group1._3_GradingSystem.TeacherPages
 		protected global::System.Web.UI.WebControls.Image SetGradesIcon;
 
 		/// <summary>
-		/// PrintMasterlistIcon control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image PrintMasterlistIcon;
-
-		/// <summary>
-		/// PrintMasterlistLabel control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label PrintMasterlistLabel;
-
-		/// <summary>
-		/// PrintStudentGradesLabel control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label PrintStudentGradesLabel;
-
-		/// <summary>
-		/// PrintStudentGradesIcon control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image PrintStudentGradesIcon;
-
-		/// <summary>
 		/// TCWelcomeAPanel control.
 		/// </summary>
 		/// <remarks>

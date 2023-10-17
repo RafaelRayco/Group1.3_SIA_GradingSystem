@@ -192,9 +192,9 @@
     }
     .welcome-announcements {
         position: fixed;
-        top: 93px;
-        left: 317px;
-        width: 960px;
+        top: 95px;
+        left: 312px;
+        width: 964px;
         height: 39px;
     }
     .announcements-list {
@@ -281,10 +281,10 @@
         <asp:Label ID="TeacherAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
         <asp:Label ID="SetGradesLabel" runat="server" Font-Size="14pt" Text="Set Grades"></asp:Label>
         <asp:Image ID="SetGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-        <asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
+        <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
         <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
         <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
-        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />
+        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
     <div class="welcome-announcements">
         <asp:Panel ID="TCWelcomeAPanel" runat="server" Height="36px" BorderStyle="Outset">
         <asp:Label ID="TCWelcomeALabel" runat="server" Text="Welcome to Announcements, " Font-Names="Arial" Font-Size="20pt"></asp:Label>
