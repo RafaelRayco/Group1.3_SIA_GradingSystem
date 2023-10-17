@@ -198,6 +198,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TeacherPages\TeacherSetGradesPage.aspx" />
     <Content Include="TeacherPages\TeacherAnnouncemenstPage.aspx" />
     <Content Include="TeacherPages\TeacherHomePage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -247,6 +248,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherPages\TeacherSetGradesPage.aspx.cs">
+      <DependentUpon>TeacherSetGradesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherPages\TeacherSetGradesPage.aspx.designer.cs">
+      <DependentUpon>TeacherSetGradesPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="TeacherPages\TeacherAnnouncemenstPage.aspx.cs">
       <DependentUpon>TeacherAnnouncemenstPage.aspx</DependentUpon>

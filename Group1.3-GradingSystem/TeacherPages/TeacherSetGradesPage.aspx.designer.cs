@@ -11,7 +11,7 @@ namespace Group1._3_GradingSystem.TeacherPages
 {
 
 
-	public partial class TeacherHomePage
+	public partial class TeacherSetGradesPage
 	{
 
 		/// <summary>
@@ -114,30 +114,75 @@ namespace Group1._3_GradingSystem.TeacherPages
 		protected global::System.Web.UI.WebControls.Image SetGradesIcon;
 
 		/// <summary>
-		/// TeacherWelcomeLabel control.
+		/// TSetGradesLabel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherWelcomeLabel;
+		protected global::System.Web.UI.WebControls.Label TSetGradesLabel;
 
 		/// <summary>
-		/// TeacherUser control.
+		/// SGAddRecord control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherUser;
+		protected global::System.Web.UI.WebControls.Button SGAddRecord;
 
 		/// <summary>
-		/// TeacherWelcome control.
+		/// SGButton1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image TeacherWelcome;
+		protected global::System.Web.UI.WebControls.Button SGButton1;
+
+		/// <summary>
+		/// SGButton2 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button SGButton2;
+
+		/// <summary>
+		/// SGSearchLabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label SGSearchLabel;
+
+		/// <summary>
+		/// SGSearchTxt control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox SGSearchTxt;
+
+		/// <summary>
+		/// SGNext control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button SGNext;
+
+		/// <summary>
+		/// SGPrev control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button SGPrev;
 	}
 }
