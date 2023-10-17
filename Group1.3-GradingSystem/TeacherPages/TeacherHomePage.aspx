@@ -2,41 +2,51 @@
 
 <!DOCTYPE html>
 <style type="text/css">
-    #form1 {
-        height: 66px;
+    #Panel1{
+        position: fixed;
     }
     #Image1 {
+        position: fixed;
         margin-right: 15px;
         margin-left: 15px;
+        top: 14px;
+        left: 12px;
+        width: 58px;
+        height: 58px;
     }
-    #ddlLogout {
+    #LogoutDropDown {
         position: fixed;
-        top: 39px;
-        left: 786px;
+        top: 35px;
+        left: 1211px;
     }
-    #Image2 {
+    #UserIcon {
         position: fixed;
-        top: 34px;
-        left: 739px;
-        height: 34px;
-        width: 41px;
+        top: 26px;
+        left: 1137px;
+        height: 40px;
+        width: 40px;
+        right: 108px;
     }
     #Label1 {
         position: fixed;
-        top: 25px;
-        left: 111px;
+        top: 20px;
+        left: 105px;
+    }
+    #NavPanel {
+        position: fixed;
+
     }
     #HomeIcon {
         position: fixed;
-        top: 96px;
-        left: 55px;
+        top: 88px;
+        left: 38px;
         width: 44px;
         height: 43px;
     }
     #TeacherHomeLabel {
         position: fixed;
-        top: 106px;
-        left: 154px;
+        top: 100px;
+        left: 143px;
         height: 28px;
         width: 54px;
         text-align: center;
@@ -50,8 +60,8 @@
     #AnnouncementIcon {
         position: fixed;
         width: 48px;
-        top: 156px;
-        left: 54px;
+        top: 149px;
+        left: 37px;
         height: 45px;
     }
     #TeacherAnnouncementLabel {
@@ -63,13 +73,13 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        top: 172px;
-        left: 117px;
+        top: 161px;
+        left: 106px;
     }
     #SetCriteriaIcon {
         position: fixed;
-        top: 229px;
-        left: 54px;
+        top: 210px;
+        left: 36px;
         height: 45px;
         width: 44px;
     }
@@ -82,14 +92,15 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        top: 241px;
-        left: 131px;
+        top: 221px;
+        left: 120px;
+        height: 19px;
     }
     #SetGradesIcon {
         position: fixed;
-        top: 294px;
-        left: 55px;
-        right: 786px;
+        top: 270px;
+        left: 38px;
+        right: 1204px;
         height: 43px;
     }
     #SetGradesLabel {
@@ -101,93 +112,120 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        top: 306px;
-        left: 134px;
+        top: 285px;
+        left: 125px;
         width: 91px;
-        right: 659px;
+        right: 1069px;
     }
     #PrintMasterlistIcon {
         position: fixed;
-        top: 362px;
-        left: 53px;
+        top: 333px;
+        left: 39px;
         height: 37px;
         width: 47px;
     }
     #PrintMasterlistLabel {
         position: fixed;
-text-align: center;
-color: #B03E3E;
-font-family: Inter;
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-        top: 372px;
-        left: 117px;
+        text-align: center;
+        color: #B03E3E;
+        font-family: Inter;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        top: 342px;
+        left: 110px;
     }
     #PrintStudentGradesIcon {
         position: fixed;
-        top: 426px;
-        left: 55px;
+        top: 394px;
+        left: 39px;
         height: 46px;
         width: 44px;
     }
     #PrintStudentGradesLabel {
                 position: fixed;
-text-align: center;
-color: #B03E3E;
-font-family: Inter;
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-        top: 426px;
-        left: 114px;
+        text-align: center;
+        color: #B03E3E;
+        font-family: Inter;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        top: 396px;
+        left: 103px;
+    }
+    .teacher-home-image {
+        position: fixed;
+        height: 464px;
+        width: 994px;
+        top: 86px;
+        left: 278px;
+    }
+    #TeacherWelcome{
+        position: fixed;
+        top: 85px;
+        left: 278px;
+        height: 534px;
+        width: 1007px;
+    }
+    #TeacherUser {
+        position: fixed;
+        top: 90px;
+        left: 460px;
+        color: #47D466;
+    }
+    #TeacherWelcomeLabel {
+        position: fixed;
+        top: 89px;
+        left: 274px;
+        height: 45px;
+        width: 180px;
+        color: #D44747;
+    }
+    #form1 {
+        height: 523px;
+    }
+    .nav-tree-view {
+        height: 379px;
+        width: 254px;
     }
     </style>
+
 <form id="form1" runat="server">
-<header>
-        <asp:Panel ID="Panel1" runat="server" BorderColor="#B03E3E" BorderStyle="Solid">
-            <asp:Image ID="Image1" img src="../imgs/HopeLogo_TransparentPng.png" runat="server" Height="63px" Width="67px" />
-<asp:Label ID="Label1" runat="server" Text="HOPE INTEGRATED SCHOOL" Font-Bold="False" Font-Size="16pt" Width="204px" Font-Names="Times New Roman"></asp:Label>
-        </asp:Panel>
+
+<header style="height: 63px">
+        <nav style="height: 66px">
+            <asp:Image ID="Image1" img src="../imgs/HopeLogo_TransparentPng.png" runat="server" />
+        <asp:Label ID="Label1" runat="server" Text="HOPE INTEGRATED SCHOOL" Font-Bold="False" Font-Size="16pt" Width="204px" Font-Names="Times New Roman"></asp:Label>
+
+            <asp:DropDownList ID="LogoutDropDown" runat="server">
+                <asp:ListItem>Teacher</asp:ListItem>
+                <asp:ListItem>Logout</asp:ListItem>
+            </asp:DropDownList>
+
+            <asp:Image ID="UserIcon" img src="../imgs/ProfileIcon1.png" runat="server" />
+
+       </nav>
 </header>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
 </head>
-<body>
-
-    <asp:Panel ID="THomePanel" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
+<body style="height: 603px; width:1440px;"> 
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
         <asp:Label ID="TeacherHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
-    </asp:Panel>
-
-    <asp:Panel ID="TAnnouncementsPanel" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
         <asp:Label ID="TeacherAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
-    </asp:Panel>
-
-    <asp:Panel ID="TSetCriteria" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
         <asp:Image ID="SetCriteriaIcon" img src="../imgs/icon-park_mail-review.png" runat="server" Height="40px" />
         <asp:Label ID="SetCriteriaLabel" runat="server" Text="Set Criteria" Font-Size="14pt"></asp:Label>
-    </asp:Panel>
-
-    <asp:Panel ID="TSetGrades" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
         <asp:Label ID="SetGradesLabel" runat="server" Font-Size="14pt" Text="Set Grades"></asp:Label>
         <asp:Image ID="SetGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-    </asp:Panel>
-
-    <asp:Panel ID="TPrintMasterlist" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
-        <asp:Label ID="PrintMasterlistLabel" runat="server" Text="Print Masterlist" Font-Size="14pt"></asp:Label>
         <asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
-    </asp:Panel>
-
-    <asp:Panel ID="TPrintStudentGrades" runat="server" Height="58px" Width="259px" BorderColor="#B03E3E" BorderStyle="Solid">
+        <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
         <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
         <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />
-    </asp:Panel>
-
-</form>
+        <asp:Label ID="TeacherWelcomeLabel" runat="server" Font-Names="Arial" Font-Size="30pt">Welcome, </asp:Label>
+        <asp:Label ID="TeacherUser" runat="server" Font-Names="Arial" Font-Size="30pt">Teacher! </asp:Label>
+        <asp:Image ID="TeacherWelcome" img src="../imgs/Graphic1.png" runat="server" />
+    </form>
 </body>
-</html>

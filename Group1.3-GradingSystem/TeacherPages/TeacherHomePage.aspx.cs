@@ -9,10 +9,6 @@ namespace Group1._3_GradingSystem.TeacherPages
 {
 	public partial class TeacherHomePage : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
-
-		}
 
 		protected void ddlLogout_SelectedIndexChanged(object sender, EventArgs e)
 		{
