@@ -11,7 +11,7 @@ namespace Group1._3_GradingSystem.TeacherPages
 {
 
 
-	public partial class TeacherHomePage
+	public partial class TeacherAnnouncementsPage
 	{
 
 		/// <summary>
@@ -150,13 +150,22 @@ namespace Group1._3_GradingSystem.TeacherPages
 		protected global::System.Web.UI.WebControls.Image PrintStudentGradesIcon;
 
 		/// <summary>
-		/// TeacherWelcomeLabel control.
+		/// TCWelcomeAPanel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherWelcomeLabel;
+		protected global::System.Web.UI.WebControls.Panel TCWelcomeAPanel;
+
+		/// <summary>
+		/// TCWelcomeALabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label TCWelcomeALabel;
 
 		/// <summary>
 		/// TeacherUser control.
@@ -168,12 +177,75 @@ namespace Group1._3_GradingSystem.TeacherPages
 		protected global::System.Web.UI.WebControls.Label TeacherUser;
 
 		/// <summary>
-		/// TeacherWelcome control.
+		/// TCAnnouncementsList control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image TeacherWelcome;
+		protected global::System.Web.UI.WebControls.Panel TCAnnouncementsList;
+
+		/// <summary>
+		/// TCAnnouncementListLabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label TCAnnouncementListLabel;
+
+		/// <summary>
+		/// TCAnnouncement1 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Panel TCAnnouncement1;
+
+		/// <summary>
+		/// TCAnnouncement2 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Panel TCAnnouncement2;
+
+		/// <summary>
+		/// TCAnnouncement3 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Panel TCAnnouncement3;
+
+		/// <summary>
+		/// TCAnnouncement4 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Panel TCAnnouncement4;
+
+		/// <summary>
+		/// EventPanel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Panel EventPanel;
+
+		/// <summary>
+		/// EventLabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label EventLabel;
 	}
 }
