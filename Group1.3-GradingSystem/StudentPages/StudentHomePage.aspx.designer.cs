@@ -69,13 +69,13 @@ namespace Group1._3_GradingSystem.StudentPages
 		protected global::System.Web.UI.WebControls.Image HomeIcon;
 
 		/// <summary>
-		/// TeacherHomeLabel control.
+		/// StudentHomeLabel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherHomeLabel;
+		protected global::System.Web.UI.WebControls.Label StudentHomeLabel;
 
 		/// <summary>
 		/// AnnouncementIcon control.
@@ -87,57 +87,57 @@ namespace Group1._3_GradingSystem.StudentPages
 		protected global::System.Web.UI.WebControls.Image AnnouncementIcon;
 
 		/// <summary>
-		/// TeacherAnnouncementLabel control.
+		/// StudentAnnouncementLabel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherAnnouncementLabel;
+		protected global::System.Web.UI.WebControls.Label StudentAnnouncementLabel;
 
 		/// <summary>
-		/// SetGradesLabel control.
+		/// ViewGradesLabel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label SetGradesLabel;
+		protected global::System.Web.UI.WebControls.Label ViewGradesLabel;
 
 		/// <summary>
-		/// SetGradesIcon control.
+		/// ViewGradesIcon control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image SetGradesIcon;
+		protected global::System.Web.UI.WebControls.Image ViewGradesIcon;
 
 		/// <summary>
-		/// TeacherWelcomeLabel control.
+		/// StudentWelcomeLabel control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherWelcomeLabel;
+		protected global::System.Web.UI.WebControls.Label StudentWelcomeLabel;
 
 		/// <summary>
-		/// TeacherUser control.
+		/// StudentUser control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherUser;
+		protected global::System.Web.UI.WebControls.Label StudentUser;
 
 		/// <summary>
-		/// TeacherWelcome control.
+		/// StudentWelcome control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Image TeacherWelcome;
+		protected global::System.Web.UI.WebControls.Image StudentWelcome;
 	}
 }

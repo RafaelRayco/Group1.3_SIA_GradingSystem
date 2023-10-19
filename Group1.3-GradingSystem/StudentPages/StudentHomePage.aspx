@@ -43,7 +43,7 @@
         width: 44px;
         height: 43px;
     }
-    #TeacherHomeLabel {
+    #StudentHomeLabel {
         position: fixed;
         top: 101px;
         left: 158px;
@@ -64,7 +64,7 @@
         left: 37px;
         height: 45px;
     }
-    #TeacherAnnouncementLabel {
+    #StudentAnnouncementLabel {
         position: fixed;
         text-align: center;
         color: #B03E3E;
@@ -96,14 +96,14 @@
         left: 120px;
         height: 19px;
     }
-    #SetGradesIcon {
+    #ViewGradesIcon {
     position: fixed;
     top: 212px;
     left: 39px;
     right: 1203px;
     height: 43px;
 }
-#SetGradesLabel {
+#ViewGradesLabel {
     position: fixed;
     text-align: center;
     color: #B03E3E;
@@ -112,10 +112,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 221px;
-    left: 137px;
+    top: 213px;
+    left: 140px;
     width: 91px;
-    right: 1057px;
+    right: 1054px;
 }
 #PrintMasterlistIcon {
     position: fixed;
@@ -155,27 +155,27 @@
     top: 342px;
     left: 121px;
 }
-    .teacher-home-image {
+    .Student-home-image {
         position: fixed;
         height: 464px;
         width: 994px;
         top: 86px;
         left: 278px;
     }
-    #TeacherWelcome{
+    #StudentWelcome{
         position: fixed;
         top: 85px;
         left: 278px;
         height: 534px;
         width: 1007px;
     }
-    #TeacherUser {
+    #StudentUser {
         position: fixed;
         top: 90px;
         left: 460px;
         color: #47D466;
     }
-    #TeacherWelcomeLabel {
+    #StudentWelcomeLabel {
         position: fixed;
         top: 89px;
         left: 274px;
@@ -200,7 +200,7 @@
         <asp:Label ID="Label1" runat="server" Text="HOPE INTEGRATED SCHOOL" Font-Bold="False" Font-Size="16pt" Width="204px" Font-Names="Times New Roman"></asp:Label>
 
             <asp:DropDownList ID="LogoutDropDown" runat="server">
-                <asp:ListItem>Teacher</asp:ListItem>
+                <asp:ListItem>Student</asp:ListItem>
                 <asp:ListItem>Logout</asp:ListItem>
             </asp:DropDownList>
 
@@ -213,19 +213,19 @@
 </head>
 <body style="height: 603px; width:1440px;"> 
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
-        <asp:Label ID="TeacherHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
+        <asp:Label ID="StudentHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
-        <asp:Label ID="TeacherAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
+        <asp:Label ID="StudentAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
         <%--<asp:Image ID="SetCriteriaIcon" img src="../imgs/icon-park_mail-review.png" runat="server" Height="40px" />
         <asp:Label ID="SetCriteriaLabel" runat="server" Text="Set Criteria" Font-Size="14pt"></asp:Label>--%>
-        <asp:Label ID="SetGradesLabel" runat="server" Font-Size="14pt" Text="Set Grades"></asp:Label>
-        <asp:Image ID="SetGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
+        <asp:Label ID="ViewGradesLabel" runat="server" Font-Size="14pt" Text="View Grades"></asp:Label>
+        <asp:Image ID="ViewGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
         <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
         <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
         <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
         <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
-        <asp:Label ID="TeacherWelcomeLabel" runat="server" Font-Names="Arial" Font-Size="30pt">Welcome, </asp:Label>
-        <asp:Label ID="TeacherUser" runat="server" Font-Names="Arial" Font-Size="30pt">Teacher! </asp:Label>
-        <asp:Image ID="TeacherWelcome" img src="../imgs/Graphic1.png" runat="server" />
+        <asp:Label ID="StudentWelcomeLabel" runat="server" Font-Names="Arial" Font-Size="30pt">Welcome, </asp:Label>
+        <asp:Label ID="StudentUser" runat="server" Font-Names="Arial" Font-Size="30pt">Student! </asp:Label>
+        <asp:Image ID="StudentWelcome" img src="../imgs/Graphic1.png" runat="server" />
     </form>
 </body>
