@@ -37,64 +37,45 @@
 
     }
     #HomeIcon {
-        position: fixed;
-        top: 88px;
-        left: 38px;
-        width: 44px;
-        height: 43px;
+    position: fixed;
+    top: 88px;
+    left: 38px;
+    width: 44px;
+    height: 43px;
     }
     #StudentHomeLabel {
-        position: fixed;
-        top: 101px;
-        left: 158px;
-        height: 28px;
-        width: 54px;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    position: fixed;
+    top: 98px;
+    left: 160px;
+    height: 28px;
+    width: 54px;
+    text-align: center;
+    color: #B03E3E;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
     #AnnouncementIcon {
-        position: fixed;
-        width: 48px;
-        top: 149px;
-        left: 37px;
-        height: 45px;
+    position: fixed;
+    width: 48px;
+    top: 149px;
+    left: 37px;
+    height: 45px;
     }
     #StudentAnnouncementLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 164px;
-        left: 122px;
-    }
-    #SetCriteriaIcon {
-        position: fixed;
-        top: 210px;
-        left: 36px;
-        height: 45px;
-        width: 44px;
-    }
-    #SetCriteriaLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 221px;
-        left: 120px;
-        height: 19px;
+    position: fixed;
+    text-align: center;
+    color: #B03E3E;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 159px;
+    left: 122px;
+    width: 129px;
     }
     #ViewGradesIcon {
     position: fixed;
@@ -102,8 +83,8 @@
     left: 39px;
     right: 1203px;
     height: 43px;
-}
-#ViewGradesLabel {
+    }
+    #ViewGradesLabel {
     position: fixed;
     text-align: center;
     color: #B03E3E;
@@ -112,49 +93,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 213px;
-    left: 140px;
+    top: 208px;
+    left: 141px;
     width: 91px;
-    right: 1054px;
-}
-#PrintMasterlistIcon {
-    position: fixed;
-    top: 278px;
-    left: 39px;
-    height: 37px;
-    width: 47px;
-}
-#PrintMasterlistLabel {
-    position: fixed;
-    text-align: center;
-    color: #B03E3E;
-    font-family: Inter;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 284px;
-    left: 118px;
-}
-#PrintStudentGradesIcon {
-    position: fixed;
-    top: 342px;
-    left: 35px;
-    height: 46px;
-    width: 44px;
-}
-#PrintStudentGradesLabel {
-            position: fixed;
-    text-align: center;
-    color: #B03E3E;
-    font-family: Inter;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 342px;
-    left: 121px;
-}
+    right: 1053px;
+    }
     .Student-home-image {
         position: fixed;
         height: 464px;
@@ -211,19 +154,19 @@
 <head runat="server">
     <title></title>
 </head>
-<body style="height: 603px; width:1440px;"> 
+<body style="height: 603px; width:1440px;">
+    <asp:HyperLink ID="StudentHomeHL"  runat="server" NavigateUrl="StudentHomePage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
-        <asp:Label ID="StudentHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
+        </asp:HyperLink>
+    <asp:HyperLink ID="StudentHomeLabel"  runat="server" NavigateUrl="StudentHomePage.aspx" Font-Size="14pt" Font-Underline="False">Home</asp:HyperLink>
+    <asp:HyperLink ID="StudentAnnouncementshL" NavigateUrl="StudentAnnouncementsPage.aspx" runat="server" Font-Size="14pt" Font-Underline="False">    
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
-        <asp:Label ID="StudentAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
-        <%--<asp:Image ID="SetCriteriaIcon" img src="../imgs/icon-park_mail-review.png" runat="server" Height="40px" />
-        <asp:Label ID="SetCriteriaLabel" runat="server" Text="Set Criteria" Font-Size="14pt"></asp:Label>--%>
-        <asp:Label ID="ViewGradesLabel" runat="server" Font-Size="14pt" Text="View Grades"></asp:Label>
+        </asp:HyperLink>
+    <asp:HyperLink ID="StudentAnnouncementLabel" NavigateUrl="StudentAnnouncementsPage.aspx" runat="server" Font-Size="14pt" Font-Underline="False">Announcements</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="StudentViewGradesPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="ViewGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-        <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
-        <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
-        <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
-        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
+        </asp:HyperLink>
+    <asp:HyperLink ID="ViewGradesLabel" runat="server" NavigateUrl="StudentViewGradesPage.aspx" Font-Size="14pt" Font-Underline="False">View Grades</asp:HyperLink>
         <asp:Label ID="StudentWelcomeLabel" runat="server" Font-Names="Arial" Font-Size="30pt">Welcome, </asp:Label>
         <asp:Label ID="StudentUser" runat="server" Font-Names="Arial" Font-Size="30pt">Student! </asp:Label>
         <asp:Image ID="StudentWelcome" img src="../imgs/Graphic1.png" runat="server" />

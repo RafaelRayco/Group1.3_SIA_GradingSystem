@@ -37,65 +37,66 @@
 
     }
     #HomeIcon {
-        position: fixed;
-        top: 88px;
-        left: 38px;
-        width: 44px;
-        height: 43px;
+    position: fixed;
+    top: 88px;
+    left: 38px;
+    width: 44px;
+    height: 43px;
     }
     #StudentHomeLabel {
-        position: fixed;
-        top: 98px;
-        left: 160px;
-        height: 28px;
-        width: 54px;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    position: fixed;
+    top: 98px;
+    left: 160px;
+    height: 28px;
+    width: 54px;
+    text-align: center;
+    color: #B03E3E;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     }
     #AnnouncementIcon {
-        position: fixed;
-        width: 48px;
-        top: 149px;
-        left: 37px;
-        height: 45px;
+    position: fixed;
+    width: 48px;
+    top: 149px;
+    left: 37px;
+    height: 45px;
     }
     #StudentAnnouncementLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 159px;
-        left: 122px;
+    position: fixed;
+    text-align: center;
+    color: #B03E3E;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 159px;
+    left: 122px;
+    width: 129px;
     }
     #ViewGradesIcon {
-        position: fixed;
-        top: 212px;
-        left: 39px;
-        right: 1203px;
-        height: 43px;
+    position: fixed;
+    top: 212px;
+    left: 39px;
+    right: 1203px;
+    height: 43px;
     }
     #ViewGradesLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 212px;
-        left: 140px;
-        width: 91px;
-        right: 1054px;
+    position: fixed;
+    text-align: center;
+    color: #B03E3E;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 208px;
+    left: 141px;
+    width: 91px;
+    right: 1053px;
     }
     .Student-home-image {
         position: fixed;
@@ -213,12 +214,18 @@
     <title></title>
 </head>
 <body style="height: 603px; width:1440px;"> 
+    <asp:HyperLink ID="StudentHomeHL"  runat="server" NavigateUrl="StudentHomePage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
-        <asp:Label ID="StudentHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
+        </asp:HyperLink>
+    <asp:HyperLink ID="StudentHomeLabel"  runat="server" NavigateUrl="StudentHomePage.aspx" Font-Size="14pt" Font-Underline="False">Home</asp:HyperLink>
+    <asp:HyperLink ID="StudentAnnouncementshL" NavigateUrl="StudentAnnouncementsPage.aspx" runat="server" Font-Size="14pt" Font-Underline="False">    
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
-        <asp:Label ID="StudentAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
-        <asp:Label ID="ViewGradesLabel" runat="server" Font-Size="14pt" Text="View Grades"></asp:Label>
+        </asp:HyperLink>
+    <asp:HyperLink ID="StudentAnnouncementLabel" NavigateUrl="StudentAnnouncementsPage.aspx" runat="server" Font-Size="14pt" Font-Underline="False">Announcements</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="StudentViewGradesPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="ViewGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
+        </asp:HyperLink>
+    <asp:HyperLink ID="ViewGradesLabel" runat="server" NavigateUrl="StudentViewGradesPage.aspx" Font-Size="14pt" Font-Underline="False">View Grades</asp:HyperLink>
     <div class="set-grades-container">
         <asp:Label ID="SViewGradesLabel" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="20pt" ForeColor="#983939">View Grades</asp:Label>
         <asp:Button ID="VGPrintRecord" runat="server" Text="Print Grades" BackColor="White" Font-Names="Arial" ForeColor="#983939" />

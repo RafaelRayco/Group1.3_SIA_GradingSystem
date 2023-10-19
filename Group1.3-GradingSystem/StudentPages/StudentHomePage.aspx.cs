@@ -10,9 +10,9 @@ namespace Group1._3_GradingSystem.StudentPages
 	public partial class StudentHomePage : System.Web.UI.Page
 	{
 
-		protected void ddlLogout_SelectedIndexChanged(object sender, EventArgs e)
+		protected void imgHISIcon_Click(object sender, EventArgs e)
 		{
-
+			Response.Redirect("StudentLoginPage.aspx");
 		}
 	}
 }

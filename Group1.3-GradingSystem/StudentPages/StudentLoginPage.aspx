@@ -158,7 +158,7 @@
                     <asp:TextBox ID="txtUser" runat="server" Width="286px" BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
                     <asp:TextBox ID="txtPass" runat="server" Width="286px" BorderStyle="Solid" BorderWidth="1px" TextMode="Password"></asp:TextBox>
 
-                    <asp:Button ID="btnLogin" runat="server" Text="Login" BackColor="#5FA1EF" Font-Names="Arial" Font-Size="Medium" ForeColor="White" />
+                    <asp:Button ID="btnLogin" runat="server" Text="Login" BackColor="#5FA1EF" Font-Names="Arial" Font-Size="Medium" ForeColor="White" OnClick="btnLogin_Click" />
 
                 </div>
             </asp:Panel>
