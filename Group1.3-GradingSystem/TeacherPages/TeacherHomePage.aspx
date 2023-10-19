@@ -45,8 +45,8 @@
     }
     #TeacherHomeLabel {
         position: fixed;
-        top: 101px;
-        left: 158px;
+        top: 98px;
+        left: 160px;
         height: 28px;
         width: 54px;
         text-align: center;
@@ -73,17 +73,17 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        top: 164px;
+        top: 159px;
         left: 122px;
     }
-    #SetCriteriaIcon {
+    #SetGradesIcon {
         position: fixed;
-        top: 210px;
-        left: 36px;
-        height: 45px;
-        width: 44px;
+        top: 212px;
+        left: 39px;
+        right: 1203px;
+        height: 43px;
     }
-    #SetCriteriaLabel {
+    #SetGradesLabel {
         position: fixed;
         text-align: center;
         color: #B03E3E;
@@ -93,68 +93,10 @@
         font-weight: 700;
         line-height: normal;
         top: 221px;
-        left: 120px;
-        height: 19px;
+        left: 137px;
+        width: 91px;
+        right: 1057px;
     }
-    #SetGradesIcon {
-    position: fixed;
-    top: 212px;
-    left: 39px;
-    right: 1203px;
-    height: 43px;
-}
-#SetGradesLabel {
-    position: fixed;
-    text-align: center;
-    color: #B03E3E;
-    font-family: Inter;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 221px;
-    left: 137px;
-    width: 91px;
-    right: 1057px;
-}
-#PrintMasterlistIcon {
-    position: fixed;
-    top: 278px;
-    left: 39px;
-    height: 37px;
-    width: 47px;
-}
-#PrintMasterlistLabel {
-    position: fixed;
-    text-align: center;
-    color: #B03E3E;
-    font-family: Inter;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 284px;
-    left: 118px;
-}
-#PrintStudentGradesIcon {
-    position: fixed;
-    top: 342px;
-    left: 35px;
-    height: 46px;
-    width: 44px;
-}
-#PrintStudentGradesLabel {
-            position: fixed;
-    text-align: center;
-    color: #B03E3E;
-    font-family: Inter;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 342px;
-    left: 121px;
-}
     .teacher-home-image {
         position: fixed;
         height: 464px;
@@ -211,19 +153,19 @@
 <head runat="server">
     <title></title>
 </head>
-<body style="height: 603px; width:1440px;"> 
+<body style="height: 603px; width:1440px;">
+    <asp:HyperLink ID="TeacherHomeHL" runat="server" NavigateUrl="TeacherHomePage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
-        <asp:Label ID="TeacherHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
+        </asp:HyperLink>  
+    <asp:HyperLink ID="TeacherHomeLabel" runat="server" NavigateUrl="TeacherHomePage.aspx" Text="Home" Font-Size="14pt" Font-Underline="False"></asp:HyperLink>
+    <asp:HyperLink ID="TeacherAnnouncementHL" runat="server" NavigateUrl="TeacherAnnouncementsPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
-        <asp:Label ID="TeacherAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
-        <%--<asp:Image ID="SetCriteriaIcon" img src="../imgs/icon-park_mail-review.png" runat="server" Height="40px" />
-        <asp:Label ID="SetCriteriaLabel" runat="server" Text="Set Criteria" Font-Size="14pt"></asp:Label>--%>
-        <asp:Label ID="SetGradesLabel" runat="server" Font-Size="14pt" Text="Set Grades"></asp:Label>
+        </asp:HyperLink>   
+    <asp:HyperLink ID="TeacherAnnouncementLabel" runat="server" NavigateUrl="TeacherAnnouncementsPage.aspx" Text="Announcements" Font-Size="14pt" Font-Underline="False"></asp:HyperLink>
+    <asp:HyperLink ID="SetGradesHL" runat="server" NavigateUrl="TeacherSetGradesPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="SetGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-        <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
-        <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
-        <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
-        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
+        </asp:HyperLink>  
+    <asp:HyperLink ID="SetGradesLabel" runat="server" NavigateUrl="TeacherSetGradesPage.aspx" Font-Size="14pt" Text="Set Grades" Font-Underline="False"></asp:HyperLink>
         <asp:Label ID="TeacherWelcomeLabel" runat="server" Font-Names="Arial" Font-Size="30pt">Welcome, </asp:Label>
         <asp:Label ID="TeacherUser" runat="server" Font-Names="Arial" Font-Size="30pt">Teacher! </asp:Label>
         <asp:Image ID="TeacherWelcome" img src="../imgs/Graphic1.png" runat="server" />

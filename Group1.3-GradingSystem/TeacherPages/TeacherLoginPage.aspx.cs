@@ -9,10 +9,9 @@ namespace Group1._3_GradingSystem.TeacherPages
 {
 	public partial class TeacherLoginPage : System.Web.UI.Page
 	{
-
-		protected void ddlLogout_SelectedIndexChanged(object sender, EventArgs e)
+		protected void btnLogin_Click(object sender, EventArgs e)
 		{
-
+			Response.Redirect("TeacherHomePage.aspx");
 		}
 	}
 }

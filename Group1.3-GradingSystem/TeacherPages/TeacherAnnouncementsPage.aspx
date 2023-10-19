@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TeacherAnnouncemenstPage.aspx.cs" Inherits="Group1._3_GradingSystem.TeacherPages.TeacherAnnouncementsPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TeacherAnnouncementsPage.aspx.cs" Inherits="Group1._3_GradingSystem.TeacherPages.TeacherAnnouncementsPage" %>
 
 <!DOCTYPE html>
 <style type="text/css">
@@ -76,26 +76,6 @@
         top: 159px;
         left: 122px;
     }
-    #SetCriteriaIcon {
-        position: fixed;
-        top: 210px;
-        left: 36px;
-        height: 45px;
-        width: 44px;
-    }
-    #SetCriteriaLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 221px;
-        left: 120px;
-        height: 19px;
-    }
     #SetGradesIcon {
         position: fixed;
         top: 212px;
@@ -116,44 +96,6 @@
         left: 137px;
         width: 91px;
         right: 1057px;
-    }
-    #PrintMasterlistIcon {
-        position: fixed;
-        top: 278px;
-        left: 39px;
-        height: 37px;
-        width: 47px;
-    }
-    #PrintMasterlistLabel {
-        position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 284px;
-        left: 118px;
-    }
-    #PrintStudentGradesIcon {
-        position: fixed;
-        top: 342px;
-        left: 35px;
-        height: 46px;
-        width: 44px;
-    }
-    #PrintStudentGradesLabel {
-                position: fixed;
-        text-align: center;
-        color: #B03E3E;
-        font-family: Inter;
-        font-size: 100px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 342px;
-        left: 121px;
     }
     .teacher-home-image {
         position: fixed;
@@ -275,16 +217,18 @@
     <title></title>
 </head>
 <body style="height: 603px; width:1440px;"> 
+    <asp:HyperLink ID="TeacherHomeHL" runat="server" NavigateUrl="TeacherHomePage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="HomeIcon" img src="../imgs/icon_home.png" runat="server" Height="40px" />
-        <asp:Label ID="TeacherHomeLabel" runat="server" Text="Home" Font-Size="14pt"></asp:Label>
+        </asp:HyperLink>  
+    <asp:HyperLink ID="TeacherHomeLabel" runat="server" NavigateUrl="TeacherHomePage.aspx" Text="Home" Font-Size="14pt" Font-Underline="False"></asp:HyperLink>
+    <asp:HyperLink ID="TeacherAnnouncementHL" runat="server" NavigateUrl="TeacherAnnouncementsPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="AnnouncementIcon" img src="../imgs/mdi_announcement.png" runat="server" />
-        <asp:Label ID="TeacherAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
-        <asp:Label ID="SetGradesLabel" runat="server" Font-Size="14pt" Text="Set Grades"></asp:Label>
+        </asp:HyperLink>   
+    <asp:HyperLink ID="TeacherAnnouncementLabel" runat="server" NavigateUrl="TeacherAnnouncementsPage.aspx" Text="Announcements" Font-Size="14pt" Font-Underline="False"></asp:HyperLink>
+    <asp:HyperLink ID="SetGradesHL" runat="server" NavigateUrl="TeacherSetGradesPage.aspx" Font-Size="14pt" Font-Underline="False">
         <asp:Image ID="SetGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-        <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
-        <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
-        <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
-        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
+        </asp:HyperLink>  
+    <asp:HyperLink ID="SetGradesLabel" runat="server" NavigateUrl="TeacherSetGradesPage.aspx" Font-Size="14pt" Text="Set Grades" Font-Underline="False"></asp:HyperLink>
     <div class="welcome-announcements">
         <asp:Panel ID="TCWelcomeAPanel" runat="server" Height="36px" BorderStyle="Outset">
         <asp:Label ID="TCWelcomeALabel" runat="server" Text="Welcome to Announcements, " Font-Names="Arial" Font-Size="20pt"></asp:Label>

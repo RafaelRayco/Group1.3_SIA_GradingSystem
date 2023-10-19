@@ -60,6 +60,15 @@ namespace Group1._3_GradingSystem.TeacherPages
 		protected global::System.Web.UI.WebControls.Image UserIcon;
 
 		/// <summary>
+		/// TeacherHomeHL control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink TeacherHomeHL;
+
+		/// <summary>
 		/// HomeIcon control.
 		/// </summary>
 		/// <remarks>
@@ -75,7 +84,16 @@ namespace Group1._3_GradingSystem.TeacherPages
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherHomeLabel;
+		protected global::System.Web.UI.WebControls.HyperLink TeacherHomeLabel;
+
+		/// <summary>
+		/// TeacherAnnouncementHL control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink TeacherAnnouncementHL;
 
 		/// <summary>
 		/// AnnouncementIcon control.
@@ -93,16 +111,16 @@ namespace Group1._3_GradingSystem.TeacherPages
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label TeacherAnnouncementLabel;
+		protected global::System.Web.UI.WebControls.HyperLink TeacherAnnouncementLabel;
 
 		/// <summary>
-		/// SetGradesLabel control.
+		/// SetGradesHL control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label SetGradesLabel;
+		protected global::System.Web.UI.WebControls.HyperLink SetGradesHL;
 
 		/// <summary>
 		/// SetGradesIcon control.
@@ -112,6 +130,15 @@ namespace Group1._3_GradingSystem.TeacherPages
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
 		protected global::System.Web.UI.WebControls.Image SetGradesIcon;
+
+		/// <summary>
+		/// SetGradesLabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink SetGradesLabel;
 
 		/// <summary>
 		/// TSetGradesLabel control.
