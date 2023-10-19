@@ -187,6 +187,13 @@
         top: 490px;
         left: 1095px;
     }
+    .view-grades-table {
+        position: fixed;
+        top: 217px;
+        left: 327px;
+        height: 301px;
+        width: 938px;
+    }
     </style>
 <form id="form1" runat="server">
 <header style="height: 63px">
@@ -212,15 +219,10 @@
         <asp:Label ID="StudentAnnouncementLabel" runat="server" Text="Announcements" Font-Size="14pt"></asp:Label>
         <asp:Label ID="ViewGradesLabel" runat="server" Font-Size="14pt" Text="View Grades"></asp:Label>
         <asp:Image ID="ViewGradesIcon" runat="server" img="" src="../imgs/ic_sharp-rate-review.png" />
-        <%--<asp:Image ID="PrintMasterlistIcon" runat="server" img="" src="../imgs/icon _people_.png" />
-        <asp:Label ID="PrintMasterlistLabel" runat="server" Font-Size="14pt" Text="Print Masterlist"></asp:Label>
-        <asp:Label ID="PrintStudentGradesLabel" runat="server" Text="View Print Student Grades" Font-Size="14pt" Width="132px"></asp:Label>
-        <asp:Image ID="PrintStudentGradesIcon" runat="server" img="" src="../imgs/material-symbols_print.png" />--%>
     <div class="set-grades-container">
         <asp:Label ID="SViewGradesLabel" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="20pt" ForeColor="#983939">View Grades</asp:Label>
         <asp:Button ID="VGPrintRecord" runat="server" Text="Print Grades" BackColor="White" Font-Names="Arial" ForeColor="#983939" />
+        <div class="view-grades-table"></div>
     </div>
      </form>
 </body>
-<%--<asp:Image ID="SetCriteriaIcon" img src="../imgs/icon-park_mail-review.png" runat="server" Height="40px" />
-<asp:Label ID="SetCriteriaLabel" runat="server" Text="Set Criteria" Font-Size="14pt"></asp:Label>--%>
