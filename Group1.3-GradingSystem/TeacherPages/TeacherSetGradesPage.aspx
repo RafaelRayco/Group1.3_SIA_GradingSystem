@@ -244,6 +244,13 @@
         top: 490px;
         left: 1095px;
     }
+    .set-grades-table {
+        position: fixed;
+        top: 243px;
+        left: 331px;
+        width: 934px;
+        height: 239px;
+    }
     </style>
 <form id="form1" runat="server">
 <header style="height: 63px">
@@ -280,6 +287,7 @@
         <asp:Button ID="SGButton2" runat="server" Text="Button 2" BackColor="White" Font-Names="Arial" ForeColor="#983939" />
         <asp:Label ID="SGSearchLabel" runat="server" Font-Names="Arial" ForeColor="#983939">Search:</asp:Label>
         <asp:TextBox ID="SGSearchTxt" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
+        <div class="set-grades-table"></div>
         <asp:Button ID="SGNext" runat="server" Text="Next" BackColor="White" Font-Names="Arial" ForeColor="#983939" />
         <asp:Button ID="SGPrev" runat="server" Text="Prev" BackColor="White" Font-Names="Arial" ForeColor="#983939" />
     </div>
